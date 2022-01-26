@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sparkproject</title>
+  <title>HTML Forms</title>
   
   <!-- HTML -->
   
@@ -15,14 +15,22 @@
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
+
+  <header class='title-header'>
+    <h1>HTML Forms and DOM Manipulation with JS</h1>
+    <p><em>Want to invite us to train your staff? Fill out this form.</em></p>
+  </header>
+  
   
   <button>Click here</button>
   <!-- Project -->
   
   
-  <form action="" method="POST">
-    <label for="fname">First Name</label>
+  <form action="" method="POST" class="form-row">
+
+    <fieldset class="field">
+      <legend>Personal Details</legend>
+      <label for="fname">First Name</label>
     <input type="text" id="fname" name="fname">
     
     <label for="lname">Last Name</label>
@@ -30,8 +38,11 @@
     
     <label for="age">Age</label>
     <input type="number" id="age" name="age">
+    </fieldset>
     
-    <label for="email">Email Address</label>
+    <fieldset class="fielda">
+      <legend>Other details</legend>
+      <label for="email">Email Address</label>
     <input type="text" id="email" name="email" placeholder="example@myself.com">
     
     <label for="psw">Password</label>
@@ -39,8 +50,13 @@
     
     <label for="dob">Date of Birth</label>
     <input type="date" id="dob" name="dob">
+    <label for="gsmnum">Phone Number:</label>
+  <input type="tel" id="gsmnum" name="gsmnum">
+    </fieldset>
     
-    <label for="yentry">Year of Entry</label>
+    <fieldset class="fieldb">
+      <legend>Academic Records</legend>
+      <label for="yentry">Year of Entry</label>
     <input type="date" id="yentry" name="yentry">
 
     <select name="courses">
@@ -55,6 +71,32 @@
 
     <label for="comment">Enter your comment</label>
     <textarea id="comment" rows="10" cols="20">Write what you feel...</textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>What would you like to drink?</legend>
+    
+      <div>
+        <input type="radio" name="drink" id="coffee" value="coffee">
+        <label for="coffee">Coffee</label>
+      </div>
+    
+      <div>
+        <input type="radio" name="drink" id="tea" value="tea">
+        <label for="tea">Tea</label>
+      </div>
+    
+      <div>
+        <input type="radio" name="drink" id="soda" value="soda">
+        <label for="soda">Soda</label>
+      </div>
+    
+    </fieldset>
+
+    <fieldset class="fieldc">
+      <button type="submit" id="submit">Submit</button>
+    <button type="reset" id="reset">Reset</button>
+    </fieldset>
 
   </form>
   

@@ -35,3 +35,13 @@ eventColor.addEventListener('click', () => {
     eventColor.style.backgroundColor = "red";
   }
 });   
+
+
+const submit = document.querySelector("#submit");
+const reset = document.querySelector("#reset");
+submit.addEventListener('click', ()=>{
+  confirm("Have you confirmed the details you supplied?")
+})
+reset.addEventListener('click', ()=>{
+  confirm("Are you sure to reset the form?")
+})
