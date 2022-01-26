@@ -54,10 +54,48 @@
     </select>
 
     <label for="comment">Enter your comment</label>
-    <textarea rows="20" cols="30">Write what you feel...</textarea>
-
+    <textarea id="comment" rows="10" cols="20">Write what you feel...</textarea>
 
   </form>
+  
+  <h1>Ticket Type</h1>
+  <div>
+    <input type="radio" id="child" name="ticket_type" value="child">
+    <label for="child">Child</label>
+  </div>
+  
+  <div>
+    <input type="radio" id="adult" name="ticket_type" value="adult">
+    <label for="adult">Adult</label>
+  </div>
+  
+  <div>
+    <input type="radio" id="senior" name="ticket_type" value="senior">
+    <label for="senior">Senior</label>
+  </div>
+  
+  <h1>Pizza Toppings</h1>
+
+<div>
+  <input type="checkbox" id="child" name="topping" value="sausage">
+  <label for="sausage">Sausage</label>
+</div>
+
+<div>
+  <input type="checkbox" id="onions" name="topping" value="onions">
+  <label for="onions">Onions</label>
+</div>
+
+<div>
+  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+  <label for="pepperoni">Pepperoni</label>
+</div>
+
+<div>
+  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+  <label for="mushrooms">Mushrooms</label>
+</div>
+
   <script src="main.js"></script>
 </body>
 </html>
