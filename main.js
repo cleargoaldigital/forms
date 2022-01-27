@@ -125,3 +125,41 @@ function convertToRoman(num) {
   
   
   console.log(convertToRoman(1999));
+
+  // Ceasar Cipher
+
+  const alphabets = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+
+function rot13(str) {
+ 
+  return str;
+}
+
+rot13("SERR PBQR PNZC");
