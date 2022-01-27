@@ -25,6 +25,12 @@ body {
   margin-bottom: 20px;
 }
 
+button{
+  border-radius: 10px;
+  border: 2px solid red;
+  padding: 15px 18px;
+}
+
 .form-row {
   margin-bottom: 40px;
   display: flex;
@@ -46,9 +52,23 @@ body {
   margin-bottom: 15px;
 }
 
-.form-row textarea {              
+.form-row select{
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  margin: 15px auto;
+}
+.form-row textarea {  
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;            
   width: 250px;
-  height: initial;
 }
 
 @media only screen and (min-width: 700px) {
@@ -73,11 +93,31 @@ body {
   }
 }
 
-button{
-  border-radius: 10px;
-  border: 2px solid red;
-  padding: 15px 18px;
+.form-row button{
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #5995DA;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 40px;
+  cursor: pointer;
 }
+
+.form-row button:hover{
+  background-color: #76FFED;
+}
+
+.form-row button :active{
+  background-color: #407FC7;
+}
+
+@media only screen and (min-width:700) {
+  .form-row button{
+    margin-left: 120px;
+  }
+}
+
 
 /* fieldset{
 padding: 15px;
