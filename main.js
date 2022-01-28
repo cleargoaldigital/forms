@@ -10,7 +10,6 @@ let duck = new Bird();
 duck.getWeight();
 console.log(Bird());
 
-
 const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
 document.body.style.backgroundColor = 'green';
@@ -35,7 +34,6 @@ eventColor.addEventListener('click', () => {
     eventColor.style.backgroundColor = "red";
   }
 });   
-
 
 const submit = document.querySelector("#submit");
 const reset = document.querySelector("#reset");
