@@ -14,7 +14,7 @@ const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
 body.style.backgroundColor = 'green';
 body.style.color = "#fed";
-eventColor.textContent = "Change text and background colour";
+/* eventColor.textContent = "Change text and background colour";
 
 eventColor.addEventListener('click', () => {
   if (body.style.backgroundColor === 'green') {
@@ -32,7 +32,7 @@ eventColor.addEventListener('click', () => {
     eventColor.style.backgroundColor = "red";
   }
 });
-
+*/
 const submit = document.querySelector("#submit");
 const reset = document.querySelector("#reset");
 submit.addEventListener('click', ()=> {
@@ -175,6 +175,6 @@ let singleUser = users.map((user)=> {
   <p class="age">${user.age}</p>
   `
   return finalName;
-  
+
 });
 console.log(singleUser);
