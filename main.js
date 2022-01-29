@@ -13,7 +13,7 @@ console.log(Bird());
 const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
 body.style.backgroundColor = 'green';
-body.style.color = "#lightgreen";
+body.style.color = "#0009ff";
 
 /* eventColor.textContent = "Change text and background colour";
 eventColor.addEventListener('click', () => {
