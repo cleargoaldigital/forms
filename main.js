@@ -12,10 +12,10 @@ console.log(Bird());
 
 const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
-body.style.backgroundColor = 'green';
+/* body.style.backgroundColor = "green";
 body.style.color = "#0009ff";
 
-/* eventColor.textContent = "Change text and background colour";
+eventColor.textContent = "Change text and background colour";
 eventColor.addEventListener('click', () => {
   if (body.style.backgroundColor === 'green') {
     body.style.backgroundColor = 'orange';
@@ -170,11 +170,10 @@ let users = [{
 let singleUser = users.map((user)=> {
   //let's add the firstname and lastname together
   let fullName = user.firstName + ' ' + user.lastName;
-  let finalName = `
+  return `
   <h3 class='name'>${fullName}</h3>
   <p class="age">${user.age}</p>
   `
-  return finalName;
 
 });
-console.log(singleUser);
+console.log(users);
