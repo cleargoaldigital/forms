@@ -12,22 +12,22 @@ console.log(Bird());
 
 const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
-document.body.style.backgroundColor = 'green';
-document.body.style.color = "#fed";
+body.style.backgroundColor = 'green';
+body.style.color = "#fed";
 eventColor.textContent = "Change text and background colour";
 
 eventColor.addEventListener('click', () => {
-  if (document.body.style.backgroundColor === 'green') {
-    document.body.style.backgroundColor = 'orange';
-    document.body.style.color = 'skyblue';
+  if (body.style.backgroundColor === 'green') {
+    body.style.backgroundColor = 'orange';
+    body.style.color = 'skyblue';
     eventColor.style.backgroundColor = "blue";
-  } else if (document.body.style.backgroundColor === "orange") {
-    document.body.style.backgroundColor = "red";
-    document.body.style.color = "#feddef";
+  } else if (body.style.backgroundColor === "orange") {
+    body.style.backgroundColor = "red";
+    body.style.color = "#feddef";
     eventColor.textContent = "Akanbi";
   } else {
-    document.body.style.backgroundColor = "green";
-    document.body.style.color = "#fff";
+    body.style.backgroundColor = "green";
+    body.style.color = "#fff";
     eventColor.textContent = "Abdulhayy";
     eventColor.style.backgroundColor = "red";
   }
@@ -175,5 +175,6 @@ let singleUser = users.map((user)=> {
   <p class="age">${user.age}</p>
   `
   return finalName;
-  console.log(finalName)
+  
 });
+console.log(singleUser);
