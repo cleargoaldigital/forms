@@ -174,7 +174,6 @@ let singleUser = users.map((user)=> {
   <h3 class='name'>${fullName}</h3>
   <p class="age">${user.age}</p>
   `
-  
-  console.log(finalName);
   return finalName;
+  console.log(finalName)
 });
