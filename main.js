@@ -150,3 +150,21 @@ function rot13(str) {
 return resulti;
 }
 console.log(rot13("SERR PBQR PNZC"));
+
+//Telephone Number Validation
+
+function telephoneCheck(str) {
+
+  const validCode = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
+  
+  // const validCode = /^(1\s?)?\d{3}([-\s]?)\d{3}\2\d{4}$/,
+  // validCoded = /^(1\s?)?\(\d{3}\)\s?\d{3}[-\s]?\d{4}$/;
+  
+  if(validCode.test(str)){
+    return true;
+  } else{
+    return false
+    // return rex2.test(str) ? true : false;
+  }};
+  
+  console.log(telephoneCheck("(123) 456 7890"));
