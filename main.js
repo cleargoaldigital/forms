@@ -13,26 +13,32 @@ console.log(Bird());
 
 const eventColor = document.querySelector('button');
 const body = document.querySelector('body');
+const header = document.querySelector('.title-header');
 document.body.style.backgroundColor = 'green';
 document.body.style.color = "#fed";
 eventColor.textContent = "Change text and background colour";
 
+
+header.style.color = "blue";
+
 eventColor.addEventListener('click', () => {
-    if(document.body.style.backgroundColor === 'green'){
-      document.body.style.backgroundColor = 'orange';
-      document.body.style.color = 'skyblue';
-      eventColor.style.backgroundColor = "blue";
+    if(body.style.backgroundColor === 'green'){
+      body.style.backgroundColor = 'orange';
+      body.style.color = 'blue';
+      eventColor.textContent = "You've selected orange";
+      header.style.color = "red";
     }
-  else if(document.body.style.backgroundColor=== "orange"){
-    document.body.style.backgroundColor = "red";
-    document.body.style.color = "#feddef";
-    eventColor.textContent = "Akanbi";
+  else if(body.style.backgroundColor=== "orange"){
+    body.style.backgroundColor = "red";
+    body.style.color = "#eee";
+    eventColor.textContent = "Red is the colour of love";
+    header.style.color = "#000";
   }
   else {
-    document.body.style.backgroundColor = "green";
-    document.body.style.color = "#fff";
-    eventColor.textContent = "Abdulhayy";
-    eventColor.style.backgroundColor = "red";
+    body.style.backgroundColor = "green";
+    body.style.color = "#fff";
+    eventColor.textContent = "You've returned to default colour";
+    header.style.color = "orange";
   }
 });   
 
