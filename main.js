@@ -52,6 +52,8 @@ reset.addEventListener('click', ()=>{
   confirm("Are you sure to reset the form?")
 })
 
+// Conversion to Roman Numerals: A freeCodeCamp Project
+
 function convertToRoman(num) {
   let result = "";
   
@@ -129,10 +131,9 @@ function convertToRoman(num) {
    return result;
   }
   
-  
   console.log(convertToRoman(1999));
 
-  // Ceasar Cipher
+  // Ceasar Cipher: A freeCodeCamp Project.
 
   const alphabets = [
     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
@@ -150,14 +151,12 @@ function rot13(str) {
    const charIndex = alphabets.findIndex((e) => e === char);
    resulti += alphabets[charIndex + 13] || alphabets[charIndex - 13];
  }
-  
 }
-
 return resulti;
 }
 console.log(rot13("SERR PBQR PNZC"));
 
-//Telephone Number Validation
+//Telephone Number Validation: A freeCodeCamp Project
 
 function telephoneCheck(str) {
 
